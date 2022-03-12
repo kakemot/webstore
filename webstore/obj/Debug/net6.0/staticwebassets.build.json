@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WWb8XGZYA3kB0A/WM4bcyrQ4QzuF//lZvLe1aktRFbc=",
+  "Hash": "8CZayWZKb5dYF8C7TYWthCBHGHNCCFaDg6iDTTmRpwQ=",
   "Source": "webstore",
   "BasePath": "_content/webstore",
   "Mode": "Default",
@@ -270,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\webstore\\webstore\\wwwroot\\images\\water.png",
+      "SourceId": "webstore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\webstore\\webstore\\wwwroot\\",
+      "BasePath": "_content/webstore",
+      "RelativePath": "images/water.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\water.png"
     }
   ]
 }
