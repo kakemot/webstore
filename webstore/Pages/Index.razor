@@ -1,0 +1,49 @@
+﻿@using webstore.Data
+@page "/"
+
+<PageTitle>Products</PageTitle>
+
+<h1>Donate to civillians in Ukraine</h1>
+
+<div class="row">
+    @foreach (var product in products)
+    {
+        <div class="col-auto product">
+            <div class="row">
+                <div class="col-sm">
+                    <h4>@product.Name</h4>
+                    @product.Description
+                </div>
+                <div class="col-sm">
+                    <img src="images/@product.Image" width="50" height="50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="add-to-cart">$@product.Price Add to cart</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@code {
+    List<Product> products = new List<Product>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Product product = new Product();
+        product.Name = "Water bottle";
+        product.Description = "One bottle of water";
+        product.Price = 3;
+        product.Image = "water.png";
+        products.Add(product);
+        Product product2 = new Product();
+        product2.Name = "Thing";
+        product2.Description = "Another product";
+        product2.Price = 3;
+        product2.Image = "water.png";
+        products.Add(product2);
+        products.Add(product2);
+        products.Add(product2);
+    }
+}
