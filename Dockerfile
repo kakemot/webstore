@@ -19,3 +19,5 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "webstore.dll"]
 EXPOSE 80
+EXPOSE 443
+EXPOSE 8080
